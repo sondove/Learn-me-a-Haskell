@@ -5,7 +5,7 @@ toDigits :: Integer -> [Integer]
 toDigits 0 = []
 toDigits x 
     | x < 0     = []
-    | otherwise = map toInteger $ map digitToInt $ show x
+    | otherwise = map (toInteger.digitToInt) $ show x
 
 toDigitsRev :: Integer -> [Integer]
 toDigitsRev x = reverse $ toDigits x
