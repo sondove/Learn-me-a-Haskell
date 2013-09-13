@@ -6,7 +6,7 @@ type Degree     = Double
 type Rad        = Double
 
 type CarPos     = (Distance, Distance)
-type TPath       = (Degree, [CarPos])
+type TPath      = (Degree, [CarPos])
 
 type KmH        = Double
 type Minutes    = Double
@@ -25,7 +25,6 @@ journey =
     , (TurnLeft,  50, 1.0)
     , (TurnRight, 20, 2.0)
     , (TurnLeft,  50, 0.5) ] :: Trip
-
 
 deg2rad ::Degree -> Rad
 deg2rad = (*) (pi/180) 
